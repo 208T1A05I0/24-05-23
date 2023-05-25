@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder="Enter username" id="username"/>
+    <button onclick="store()">submit</button>
+    <script>
+        function store(){
+            var userName=document.getElementById("username").value
+            console.log(userName)
+        }
+    </script><br><br>
+    <input placeholder="Enter Mail ID" id="mailid"/>
+    <button onclick="store1()">submit</button>
+    <script>
+        function store1(){
+            var mailId=document.getElementById("mailid").value
+            console.log(mailId)
+        }
+    </script><br><br>
+    <input type="radio" name="Gender" id="Gendermale" value="Male"/>Male
+    <br>
+    <input type="radio" name="Gender" id="Genderfemale" value="Female"/>Female <br>
+    <button onclick="store2()">submit</button>
+    <script>
+        function store2(){
+            var male=document.getElementById("Gendermale").checked
+            var female=document.getElementById("Genderfemale").checked
+            if(male==true)
+                gender="male"
+            else if(female==true)
+                gender="female"
+            else
+                gender=null
+            console.log(gender)
+        }
+    </script>
+    <!-- <button onclick="demo()">Click</button>
+    <script>
+        function demo(){
+            alert("on button click it appeared")
+        }
+    </script> -->
+</body>
+</html>
+
+<!-- 
+    onclick
+    onchange
+    onsubmit
+    onkeypress
+    onkeydown
+    onkeyup
+    onmouseover
+    onmouseout
+
+ -->
